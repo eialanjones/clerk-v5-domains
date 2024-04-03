@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <SignedOut>
-        <SignInButton />
+        <SignInButton redirectUrl="https://mentorfy.com.br"/>
         <p>This content is public. Only signed out users can see this.</p>
       </SignedOut>
       <SignedIn>
