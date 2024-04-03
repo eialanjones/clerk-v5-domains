@@ -5,7 +5,6 @@ import type { AppProps } from 'next/app'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ClerkProvider
-    signInUrl="https://mentorfy.com.br/"
       isSatellite={(url) =>
         !url.hostname.includes("mentorfy") &&
         !url.hostname.includes("localhost")
