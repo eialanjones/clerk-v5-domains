@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
         return `${url.hostname.replace("app.", "")}`;
       }}
-      localization={location}
     {...pageProps}>
       <Component {...pageProps} />
     </ClerkProvider>
