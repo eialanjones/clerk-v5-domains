@@ -5,6 +5,7 @@ import type { AppProps } from 'next/app'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ClerkProvider
+    // allowedRedirectOrigins={['rioscompany.com.br']}
       isSatellite={(url) =>
         !url.hostname.includes("mentorfy") &&
         !url.hostname.includes("localhost")
